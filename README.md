@@ -11,5 +11,7 @@ React native öğrenmek için videoyu izleyerek birebir aynı uygulamayı geliş
 
  - Expo
  - React Native
- - Firebase giriş
+ - Firebase Storage Veri ekleme ve çekme
+ - Firebase Cloud Function
+ - OpenAI Api
  - App Development File Structure

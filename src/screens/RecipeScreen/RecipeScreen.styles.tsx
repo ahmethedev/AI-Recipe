@@ -19,6 +19,12 @@ export default StyleSheet.create({
         padding: 16,
 
     },
+    title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginBottom: 16,
+
+    },
     input: {
          padding: 16,
          backgroundColor: '#eee',

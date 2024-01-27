@@ -6,6 +6,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { RecipeScreenUIProps } from "./RecipeScreen.props";
 
 const RecipeScreenUI: React.FC<RecipeScreenUIProps> = ({
+  recipe, 
   value,
   onChangeValue,
   onPressCreate
@@ -14,7 +15,9 @@ const RecipeScreenUI: React.FC<RecipeScreenUIProps> = ({
   return (
     <View style={[styles.container, { paddingBottom, paddingTop }]}>
       <View style={styles.recipeContainer}>
-        <Text>{value}</Text>
+        {recipe && (
+          <Text style={styles.title}>{recipe.title}</Text>
+        )}
       </View>
       <View style={styles.bottomContainer}>
         <TextInput
